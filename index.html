@@ -20,6 +20,8 @@
       rel="stylesheet"
     />
 
+    <link rel="icon" href="./src/images/favicon.png">
+
     <link rel="stylesheet" href="./src/src/styles/main.scss" />
   </head>
 
@@ -35,7 +37,18 @@
               <img src="./src/images/logo.png" alt="The Met logo">
             </a>
             <div class="top-bar__icons">
-              <a href="#" class="icon icon--phone"></a>
+              <div href="#" class="icon icon--phone">
+                <span class="icon__tooltip">
+                  <span class="icon__location">The Met Fifth Avenue</span>
+                  <a href="tel:+12125357710" class="icon__number">
+                    +1 212-535-7710
+                  </a>
+                  <span class="icon__location">The Met Cloisters</span>
+                  <a href="tel:+12129233700" class="icon__number">
+                    +1 212-923-3700
+                  </a>
+                </span>
+              </div>
               <a href="#menu" class="icon icon--menu"></a>
             </div>
           </div>
@@ -170,15 +183,27 @@
                     <img
                       class="exhibition-card__image"
                       src="./src/images/now-on-view/a-new-look-at-old-masters-wide.png"
-                      alt="A New Look at Old Masters"
-                    >
+                        srcset="
+                          ./src/images/now-on-view/a-new-look-at-old-masters-wide.png 1x,
+                          ./src/images/now-on-view/a-new-look-at-old-masters-wide.png 2x
+                        "
+                        alt="A New Look at Old Masters"
+                        loading="lazy"
+                        decoding="async"
+                      >
                   </a>
 
                   <a href="#" class="exhibition-card__link exhibition-card__link--square">
                     <img
                       class="exhibition-card__image"
                       src="./src/images/now-on-view/a-new-look-at-old-masters-square.png"
-                      alt="A New Look at Old Masters"
+                        srcset="
+                          ./src/images/now-on-view/a-new-look-at-old-masters-square.png 1x,
+                          ./src/images/now-on-view/a-new-look-at-old-masters-square.png 2x
+                        "
+                        alt="A New Look at Old Masters"
+                        loading="lazy"
+                        decoding="async"
                     >
                   </a>
                 </div>
@@ -195,7 +220,13 @@
                     <img
                       class="exhibition-card__image"
                       src="./src/images/now-on-view/bodhisattvas-of-wisdom-square-1.png"
-                      alt="Bodhisattvas of Wisdom"
+                        srcset="
+                          ./src/images/now-on-view/bodhisattvas-of-wisdom-square-1.png 1x,
+                          ./src/images/now-on-view/bodhisattvas-of-wisdom-square-1.png 2x
+                        "
+                        alt="Bodhisattvas of Wisdom"
+                        loading="lazy"
+                        decoding="async"
                     >
                   </a>
 
@@ -203,7 +234,13 @@
                     <img
                       class="exhibition-card__image"
                       src="./src/images/now-on-view/compassion-square-2.png"
-                      alt="Compassion"
+                        srcset="
+                          ./src/images/now-on-view/compassion-square-2.png 1x,
+                          ./src/images/now-on-view/compassion-square-2.png 2x
+                        "
+                        alt="Compassion"
+                        loading="lazy"
+                        decoding="async"
                     >
                   </a>
 
@@ -211,7 +248,13 @@
                     <img
                       class="exhibition-card__image"
                       src="./src/images/now-on-view/power-square-3.png"
+                      srcset="
+                        ./src/images/now-on-view/power-square-3.png 1x,
+                        ./src/images/now-on-view/power-square-3.png 2x
+                      "
                       alt="Power"
+                      loading="lazy"
+                      decoding="async"
                     >
                   </a>
                 </div>
@@ -227,7 +270,13 @@
                     <img
                       class="exhibition-card__image"
                       src="./src/images/now-on-view/inspiring-walt-disney-square.png"
+                      srcset="
+                        ./src/images/now-on-view/inspiring-walt-disney-square.png 1x,
+                        ./src/images/now-on-view/inspiring-walt-disney-square.png 2x
+                      "
                       alt="The Animation of French Decorative Arts"
+                      loading="lazy"
+                      decoding="async"
                     >
                   </a>
 
@@ -235,7 +284,13 @@
                     <img
                       class="exhibition-card__image"
                       src="./src/images/now-on-view/inspiring-walt-disney-wide.png"
+                      srcset="
+                        ./src/images/now-on-view/inspiring-walt-disney-wide.png 1x,
+                        ./src/images/now-on-view/inspiring-walt-disney-wide.png 2x
+                      "
                       alt="The Animation of French Decorative Arts"
+                      loading="lazy"
+                      decoding="async"
                     >
                   </a>
                 </div>
@@ -255,24 +310,42 @@
             <div class="explore-online__cards">
               <article class="card explore-online__card">
                 <img src="./src/images/more_to_explore_online/collections_areas.png"
-                alt="Collection Areas"
-                class="card__image"
+                  srcset="
+                    ./src/images/more_to_explore_online/collections_areas.png 1x,
+                    ./src/images/more_to_explore_online/collections_areas.png 2x
+                  "
+                  alt="Collection Areas"
+                  class="card__image"
+                  loading="lazy"
+                  decoding="async"
                 >
                 <h3 class="card__title">Collection Areas</h3>
                 <p class="card__description">These collection areas study, exhibit, and care for the objects in The Met collection.</p>
               </article>
               <article class="card explore-online__card">
                 <img src="./src/images/more_to_explore_online/travel.png"
-                alt="Travel"
-                class="card__image"
+                  srcset="
+                    ./src/images/more_to_explore_online/travel.png 1x,
+                    ./src/images/more_to_explore_online/travel.png 2x
+                  "
+                  alt="Travel"
+                  class="card__image"
+                  loading="lazy"
+                  decoding="async"
                 >
                 <h3 class="card__title">Travel</h3>
                 <p class="card__description">Travel with The Met connects the Museum's wide and diverse audience to art, inspiration, and historical perspective.</p>
               </article>
               <article class="card explore-online__card">
                 <img src="./src/images/more_to_explore_online/virtual_group_tours.png"
-                alt="Virtual group tours"
-                class="card__image"
+                  srcset="
+                    ./src/images/more_to_explore_online/virtual_group_tours.png 1x,
+                    ./src/images/more_to_explore_online/virtual_group_tours.png 2x
+                  "
+                  alt="Virtual group tours"
+                  class="card__image"
+                  loading="lazy"
+                  decoding="async"
                 >
                 <h3 class="card__title">Virtual group tours</h3>
                 <p class="card__description"> Request a guided tour, reserve admission and lead your own small group, or request a live virtual tour led by a Museum guide.</p>
@@ -362,7 +435,7 @@
 
     <footer class="footer">
       <div class="footer__content">
-        
+
       </div>
     </footer>
   </body>
