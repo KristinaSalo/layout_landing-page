@@ -1,4 +1,11 @@
 .contacts {
+    &__link {
+      color: inherit;
+      text-decoration: none;
+      font: inherit;
+      display: inline-block;
+  }
+
   &__wrapper {
     @include page-grid;
 

@@ -65,7 +65,7 @@
     position: relative;
     overflow: hidden;
 
-    &:hover &__image {
+    &:hover .exhibition-card__image {
       transform: scale(1.05);
     }
 
